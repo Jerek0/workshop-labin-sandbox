@@ -1,0 +1,20 @@
+{{> partials/header }}
+
+<p>Lorem ipsum dolor sit amet consectetur</p>
+{{> snippets/button label="Read more"}}
+
+<h2>Products</h2>
+<div style="display: flex; gap: 20px; margin-bottom: 20px;">
+    {{#each articles}}
+        {{> snippets/article-tile }}
+    {{/each}}
+</div>
+
+<h2>FAQ</h2>
+<div style="margin-bottom: 20px; margin-top: 20px;">
+    {{#each faq.items}}
+        {{> snippets/accordion }}
+    {{/each}}
+</div>
+
+{{> partials/footer }}
