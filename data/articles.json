@@ -8,5 +8,10 @@
         "title": "Blossom Touch Gloves",
         "tag": "Gloves",
         "price": "$59"
+    },
+    {
+        "title": "Beanie",
+        "tag": "Hats",
+        "price": "$39"
     }
 ]

@@ -21,14 +21,15 @@ module.exports = function(eleventyConfig) {
         }
     });
 
-    eleventyConfig.addWatchTarget("./views/partials");
-    eleventyConfig.addWatchTarget("./views/snippets");
+    // eleventyConfig.addWatchTarget("./views/partials");
+    // eleventyConfig.addWatchTarget("./views/snippets");
 
     return {
-      dir: {
-        input: "views/templates",
-        output: "www",
-        data: '../../data'
-      }
+        templateFormats: ["hbs"],
+        dir: {
+            input: "views/templates",
+            output: "www",
+            data: '../../data'
+        }
     }
-  };
+};

@@ -2,8 +2,10 @@
   "name": "eleventy-sample",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "scripts": {
-    "start": "npx @11ty/eleventy --serve"
+    "start": "node --experimental-json-modules --no-warnings build/watch.js",
+    "11ty": "npx @11ty/eleventy --serve"
   },
   "keywords": [],
   "author": "",
@@ -11,6 +13,13 @@
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
     "@factorial/eleventy-plugin-twig": "^0.1.2",
-    "handlebars": "^4.7.8"
+    "browser-sync": "^2.29.3",
+    "esbuild": "^0.19.0",
+    "handlebars": "^4.7.8",
+    "kleur": "^4.1.5",
+    "sass": "^1.65.1"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
   }
 }
